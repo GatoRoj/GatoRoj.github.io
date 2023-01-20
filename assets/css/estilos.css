@@ -1,8 +1,20 @@
 body {
   font-family: "Raleway", sans-serif;
+  background-color:var(--var2-op1);
+  background-size: 400% 400%;
+    background-attachment: fixed;
 }
 
 /* Hero Section */
+:root{
+  --var1-op1:rgb(20, 2, 40);
+  --var2-op1:#00e0fd;
+  --var3-op1:#5e12ad;
+  
+  --var1-op2:#5e12ad;
+  --var2-op2:rgb(20,2,40);
+  --var3-op2:#00e0fd;
+}
 
 
 /* Mis trabajos */
@@ -31,13 +43,18 @@ body {
 }
 /* Contacto */
 
+.bg-blue{
+  background-color:var(--op1-var);
+}
+
 #Contacto form label {
   font-weight: 700;
   color: #373a3c;
 }
 
 .curve{
-  background-color: #140228;
+  background-color: var(--var1-op1);
+  fill:var(--var2-op1)
 }
 
 .hero__status {
@@ -68,7 +85,10 @@ body {
 
 
 .bg-purple{
-  background-color:rgb(20, 2, 40);
+  background-color:var(--var1-op1);
+}
+.bg-lightpurple{
+  background-color:var(--var3-op1);
 }
 
 .txt-purple{
@@ -85,6 +105,14 @@ body {
   padding: 8px 16px;
   border-bottom: 1px solid hsl(193, 100%, 48.8%);
   margin: 1rem;
+}
+.main-footer{
+  position:-webkit-sticky;
+  position:sticky;
+  bottom:0;
+  border-color:red;
+  transform:scaleX(-1);
+  fill:var(--var3-op1);
 }
 
 @media (max-width: 768px) {
@@ -115,4 +143,15 @@ body {
   0%   {top: 90px;}
   50%  {top: 110px;}
   100% {top: 90px;}
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
