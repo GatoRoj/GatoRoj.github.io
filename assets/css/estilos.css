@@ -36,13 +36,52 @@ body {
   color: #373a3c;
 }
 
+
+.hero__status {
+  padding: 8px;
+  border: 1px solid hsl(270, 50%, 40%);
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -1px;
+  z-index: 5;
+  gap: 8px;
+  font-weight: 500;
+  color: hsl(219, 13.5%, 71%);
+  min-width:313.9px;
+}
+
+.hero__status::before {
+  content: "";
+  display: inline-block;
+  aspect-ratio: 1;
+  width: 16px;
+  background-color: rebeccapurple;
+  border: 1px solid hsl(256.7, 15%, 23.5%);
+
+}
+
+
 .bg-purple{
   background-color:rgb(20, 2, 40);
+}
+
+.txt-purple{
+  color:hsl(287.1, 59.8%, 64.9%);
 }
 
 .title{
   font-weight: 700 !important;
   font-size: 2rem;
+}
+
+.nav-link{
+  display: inline-block;
+  padding: 8px 16px;
+  border-bottom: 1px solid hsl(193, 100%, 48.8%);
+  margin: 1rem;
 }
 
 @media (max-width: 768px) {
