@@ -1,0 +1,76 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Hero Section */
+
+
+/* Mis trabajos */
+
+#Mis-trabajos .image-top {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.anim{
+  position:absolute;
+}
+
+.move1{
+    animation: planetone 8s infinite ease-in-out;
+}
+
+.move2{
+    animation: planet2 8s infinite ease-in-out;
+}
+
+.move3{
+    animation: planet3 5s infinite ease-in-out;
+}
+/* Contacto */
+
+#Contacto form label {
+  font-weight: 700;
+  color: #373a3c;
+}
+
+.bg-purple{
+  background-color:rgb(20, 2, 40);
+}
+
+.title{
+  font-weight: 700 !important;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  #Contacto form label {
+    font-weight: 400;
+  }
+
+  .navbar-brand{
+    width: 100px;
+  }
+
+}
+
+
+@keyframes planetone {
+  0%   {top: 50px;}
+  50%  {top: 140px;}
+  100% {top: 50px;}
+}
+
+@keyframes planet2 {
+  0%   {top: 130px;}
+  50%  {top: 60px;}
+  100% {top: 130px;}
+}
+
+@keyframes planet3 {
+  0%   {top: 90px;}
+  50%  {top: 110px;}
+  100% {top: 90px;}
+}
