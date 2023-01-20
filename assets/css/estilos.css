@@ -36,6 +36,9 @@ body {
   color: #373a3c;
 }
 
+.curve{
+  background-color: #140228;
+}
 
 .hero__status {
   padding: 8px;
