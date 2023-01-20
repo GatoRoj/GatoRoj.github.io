@@ -45,7 +45,14 @@ body {
   border: 1px solid #5e12ad;
   color: #5e12ad;
   background-color:transparent;
+  text-decoration: none;
   font-size: 25px;
+}
+
+#wave{
+  position:fixed;
+  top:0;
+  fill:var(--var1-op1);
 }
 
 .text-dark{
@@ -53,7 +60,7 @@ body {
 }
 
 .contacme{
-  height: 800px;
+  height: 1000px;
 }
 
 .anim{
@@ -184,4 +191,44 @@ body {
     100% {
         background-position: 0% 0%;
     }
+}
+
+.quote__text {
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: var(--background);
+}
+.quote__text {
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: var(--background);
+}
+.quote::before, .quote::after {
+  content: '"';
+  position: absolute;
+  color: var(--var2-op1);
+  font-size: 90px;
+  font-weight: 700;
+  background-image: linear-gradient(var(--background), var(--background));
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
+}
+.quote {
+  border: 1px solid var(--var2-op1);
+  position: relative;
+  margin: 0;
+}
+.quote::before {
+  top: -45px;
+  left: 16px;
+}
+.quote::after {
+  bottom: -90px;
+  right: 16px;
+}
+
+.quote h2{
+  padding:32px;
 }
